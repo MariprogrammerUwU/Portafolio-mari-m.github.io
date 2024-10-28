@@ -17,34 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = contactForm.querySelector('[name="email"]').value;
             const message = contactForm.querySelector('[name="message"]').value;
 
-      
             if (!name || !email || !message) {
                 alert('Todos los campos son obligatorios.');
                 event.preventDefault();
                 return;
             }
 
-      
             if (!validateName(name)) {
                 alert('El nombre no puede contener números y solo debe incluir letras.');
                 event.preventDefault();
                 return;
             }
 
-         
             if (!validateEmail(email)) {
                 alert('Por favor, ingresa un email válido que contenga @.');
                 event.preventDefault();
                 return;
             }
 
-           
             contactForm.submit();
         }
 
         contactForm.addEventListener('submit', handleSubmit);
 
-        
         window.addEventListener('beforeunload', () => {
             contactForm.reset();
         });
