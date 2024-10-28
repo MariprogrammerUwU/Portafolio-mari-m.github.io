@@ -1,0 +1,121 @@
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0 2rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color y el transform */
+}
+
+nav a:hover {
+  border-bottom: 3px solid #A042E2;
+  animation: colorChange 1s forwards; /* Aumenté la duración de la animación */
+}
+
+@keyframes colorChange {
+  0% { color: white; }
+  20% { color: #ff9fdd; }
+  40% { color: #ff66c5; }
+  60% { color: #ff2ee1; }
+  80% { color: #AA01F3; }
+  100% { color: #A042E2; }
+}
+
+@media (max-width: 995px) {
+  nav {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid #A042E2;
+    border-bottom: 3px solid #A042E2;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  nav a:hover {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #A042E2;
+  }
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Suaviza la transición del color y el transform */
+}
+
+.navbar a:hover {
+  color: #A042E2; /* Mantiene el color al pasar el cursor */
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #aa01f3;
+  transition: width 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  transform: translateY(5px);
+}
+
+@media (min-width: 401px) {
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin: 0 15px;
+  }
+}
+
+.home-content h1,
+.home-content h3 {
+  margin-left: 0; 
+}
+

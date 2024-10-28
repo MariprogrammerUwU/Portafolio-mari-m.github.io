@@ -1,0 +1,138 @@
+.contact-section {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0000;
+    margin-top: 15vh;
+}
+
+.contact-section img {
+    width: 38vw;
+    border-radius: 10px;
+    margin-right: 80px;
+}
+
+.contact-section form {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+    margin-left: 20px;
+    background-color: rgba(25, 25, 25, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(160, 66, 226, 0.5);
+}
+
+.form-header {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+
+.inputs-row {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+#name-input,
+#lastname-input,
+#email-input,
+#phone-input,
+#message-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 10px rgba(160, 66, 226, 0.7);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#name-input:focus,
+#lastname-input:focus,
+#email-input:focus,
+#phone-input:focus,
+#message-input:focus {
+    border: 2px solid #A042E2; /* Borde morado */
+    box-shadow: 0 0 15px rgba(160, 66, 226, 1);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-button {
+    padding: 10px;
+    border: none;
+    width: 200px;
+    color: white;
+    background-color: #A042E2; /* Fondo morado */
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #A042E2; /* Mantener el fondo morado */
+    color: white; /* Texto blanco */
+    border: 2px solid #A042E2; /* Borde morado */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #A042E2; /* Sombra morada al pasar el mouse */
+}
+
+.submit-button:active {
+    box-shadow: 0 0 25px #A042E2; /* Sombra más intensa al hacer clic */
+}
+
+
+@media (max-width: 834px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 3vw; 
+    }
+    .contact-form-section {
+        flex-direction: column-reverse;
+    }
+    .form-header {
+        width: 80vw;
+    }
+    .contact-section form {
+        width: 100%;
+    }
+    .contact-section img {
+        width: 80vw;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 390px) {
+    .contact-section img {
+        width: 100%;
+    }
+    .inputs-row {
+        flex-direction: column;
+    }
+    .input-group {
+        width: 100%;
+    }
+}

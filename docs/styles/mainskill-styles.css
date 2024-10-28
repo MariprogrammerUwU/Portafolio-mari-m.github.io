@@ -1,0 +1,191 @@
+.titleskill {
+    color: white;
+    text-align: center; 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+    margin-top: 18vh; 
+}
+
+#circle-progress {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-top: 5vh; 
+}
+
+.skill-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 40px 20px 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill {
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.outer {
+    height: 160px; 
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px; 
+}
+
+.inner {
+    height: 120px; 
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number, #number1, #number2, #number3 {
+    font-weight: 600;
+    color: white;
+    font-size: 22px;
+}
+
+circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke-linecap: round;
+    stroke-dasharray: 440; 
+    stroke-dashoffset: 440; 
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill h1 {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skill .js, 
+.skill .figma, 
+.skill .html, 
+.skill .css {
+    margin-top: 30px; 
+    font-size: 20px; 
+}
+
+@media (max-width: 600px) {
+    .titleskill {
+        font-size: 2rem;
+        margin-top: 10vh; 
+        
+    }
+
+    #circle-progress {
+        display: flex; 
+        flex-direction: column; 
+        margin: 60px 60px; 
+    }
+
+    .skill-container {
+        margin: 40px 0; 
+    }
+
+    .skill {
+        width: 100px;
+        height: 100px;
+        margin: 0; 
+        margin-bottom: 20vh;
+    }
+
+    .outer, .inner {
+        height: 100px;
+        width: 100px;
+    }
+
+    #number, #number1, #number2, #number3 {
+        margin-left: 0; 
+        font-size: 16px;
+        margin-top: 3.5vh;
+    }
+
+    .skill h1 {
+        font-size: 18px;
+        
+    }
+}
+
+.skill .js {
+    margin-left: 20px;
+    margin-top: 13vh; 
+    font-size: 20px; 
+}
+
+.skill .figma {
+    margin-left: 40px;
+    margin-top: 13vh; 
+    font-size: 20px; 
+}
+
+.skill .html, 
+.skill .css {
+    margin-left: 50px;
+    margin-top: 13vh; 
+    font-size: 20px; 
+}
+
+
+@media (max-width: 550px) {
+    #container {
+        flex-direction: column;
+        gap: 40px;
+        font-size: 15px;
+    }
+    #container .card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    #container .card:hover {
+        height: 350px;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 1264px) {
+    #container {
+        flex-wrap: wrap;
+        gap: 30px;
+        font-size: 18px;
+    }
+    #container .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1264px) {
+    #container {
+        flex-wrap: nowrap;
+        gap: 50px;
+    }
+    #container .card {
+        max-width: 340px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
