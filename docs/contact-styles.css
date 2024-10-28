@@ -129,6 +129,9 @@ textarea::placeholder {
         margin: 30px;
         display: block;
     }
+    .inputs-row {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 390px) {
@@ -145,5 +148,6 @@ textarea::placeholder {
         margin: 0 auto;
     }
 }
+
 
 
