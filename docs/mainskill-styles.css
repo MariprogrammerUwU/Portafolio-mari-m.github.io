@@ -140,7 +140,6 @@ svg {
     font-size: 20px; 
 }
 
-
 @media (max-width: 550px) {
     #container {
         flex-direction: column;
@@ -177,6 +176,8 @@ svg {
         max-width: 340px;
     }
 }
+  
+
 
 
 

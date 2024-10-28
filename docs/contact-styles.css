@@ -107,32 +107,43 @@ textarea::placeholder {
 @media (max-width: 834px) {
     .contact-section {
         flex-direction: column;
-        gap: 3vw; 
+        gap: 30vw; 
+        margin: 0 auto;
+        max-width: 900px;
     }
     .contact-form-section {
         flex-direction: column-reverse;
+        margin: 0 auto;
     }
     .form-header {
         width: 80vw;
+        margin: 0 auto;
     }
     .contact-section form {
         width: 100%;
+        margin: 0 auto;
     }
     .contact-section img {
         width: 80vw;
-        margin-top: 40px;
-        margin-left: 80px;
+        margin-top: 60px; 
+        margin: 30px;
+        display: block;
     }
 }
 
 @media (max-width: 390px) {
     .contact-section img {
         width: 100%;
+        margin-top: 20px; 
+        margin: 0 auto;
     }
     .inputs-row {
         flex-direction: column;
     }
     .input-group {
         width: 100%;
+        margin: 0 auto;
     }
 }
+
+
