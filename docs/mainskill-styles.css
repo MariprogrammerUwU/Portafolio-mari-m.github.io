@@ -110,7 +110,7 @@ svg {
     }
 
     #number, #number1, #number2, #number3 {
-        margin-left: 0; 
+        margin-left: 20px; 
         font-size: 16px;
         margin-top: 3.5vh;
     }

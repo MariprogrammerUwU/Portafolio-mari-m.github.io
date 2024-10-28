@@ -96,3 +96,7 @@
     opacity: 1; 
 }
 
+.info-content strong {
+    color: white;
+}
+
